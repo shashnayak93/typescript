@@ -1,10 +1,17 @@
 class Player {
+    static description = "Player In Our Game";
     #score = 0;
     numLives = 10;
     constructor(first, last){
         this.first = first;
         this.last = last;
+        this.#secret();
     }
+
+    static randomPlayer(){
+        return new Player("Andy", "Samberg");
+    }
+
     get fullName(){
         return `${this.first} ${this.last}`;
     }
@@ -34,6 +41,10 @@ class Player {
     }
     lostLife(){
         this.numLives-=1;
+    }
+
+    #secret(){
+        console.log("SECRET!!!");
     }
 }
 
