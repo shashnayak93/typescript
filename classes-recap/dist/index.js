@@ -48,25 +48,34 @@ class Player {
     }
 }
 
-const player1 = new Player("Blue", "Steele");
-// player1.taunt();
-// console.log(player1.first);
-// console.log(player1.last);
-// console.log(player1);
-// console.log(player1.numLives);
-// player1.lostLife();
-// console.log(player1.numLives);
-// console.log(player1.score);
-// player1.score=-57;
-// console.log(player1.score);
-// player1.score=28;
-// console.log(player1.score);
-console.log(player1.fullName);
-player1.fullName="Amy Adams";
-console.log(player1.fullName);
+class AdminPlayer extends Player {
+    isAdmin = true
+
+}
+
+const admin = new AdminPlayer();
+
+
+
+// const player1 = new Player("Blue", "Steele");
+// // player1.taunt();
+// // console.log(player1.first);
+// // console.log(player1.last);
+// // console.log(player1);
+// // console.log(player1.numLives);
+// // player1.lostLife();
+// // console.log(player1.numLives);
+// // console.log(player1.score);
+// // player1.score=-57;
+// // console.log(player1.score);
+// // player1.score=28;
+// // console.log(player1.score);
+// console.log(player1.fullName);
+// player1.fullName="Amy Adams";
+// console.log(player1.fullName);
 
 
 
 
-const player2 = new Player("Charlie", "Brown");
+// const player2 = new Player("Charlie", "Brown");
 // player2.taunt();
