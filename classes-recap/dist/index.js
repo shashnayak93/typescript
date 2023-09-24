@@ -49,11 +49,15 @@ class Player {
 }
 
 class AdminPlayer extends Player {
+    constructor(first, last, powers){
+        super(first, last);
+        this.powers=powers;
+    }
     isAdmin = true
 
 }
 
-const admin = new AdminPlayer();
+const admin = new AdminPlayer("admin","mCadmin",["delete", "restore world"]);
 
 
 
